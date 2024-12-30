@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/mwiner/Projects/SerialD/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/denon_avr.dir/main.cpp.o -c /home/mwiner/Projects/SerialD/main.cpp",
+  "file": "/home/mwiner/Projects/SerialD/main.cpp",
+  "output": "CMakeFiles/denon_avr.dir/main.cpp.o"
+},
+{
+  "directory": "/home/mwiner/Projects/SerialD/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/denon_avr.dir/avr.cpp.o -c /home/mwiner/Projects/SerialD/avr.cpp",
+  "file": "/home/mwiner/Projects/SerialD/avr.cpp",
+  "output": "CMakeFiles/denon_avr.dir/avr.cpp.o"
+}
+]

@@ -1,0 +1,3 @@
+/home/mwiner/Projects/SerialD/build/CMakeFiles/denon_avr.dir
+/home/mwiner/Projects/SerialD/build/CMakeFiles/edit_cache.dir
+/home/mwiner/Projects/SerialD/build/CMakeFiles/rebuild_cache.dir
