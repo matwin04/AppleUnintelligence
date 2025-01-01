@@ -1,14 +1,14 @@
 [
 {
   "directory": "/home/mwiner/Projects/SerialD/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/denon_avr.dir/main.cpp.o -c /home/mwiner/Projects/SerialD/main.cpp",
-  "file": "/home/mwiner/Projects/SerialD/main.cpp",
-  "output": "CMakeFiles/denon_avr.dir/main.cpp.o"
+  "command": "/usr/bin/g++ -DASIO_STANDALONE -I/home/mwiner/Projects/SerialD/include -isystem /home/mwiner/vcpkg/installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/SerialD.dir/src/main.cpp.o -c /home/mwiner/Projects/SerialD/src/main.cpp",
+  "file": "/home/mwiner/Projects/SerialD/src/main.cpp",
+  "output": "CMakeFiles/SerialD.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/mwiner/Projects/SerialD/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/denon_avr.dir/avr.cpp.o -c /home/mwiner/Projects/SerialD/avr.cpp",
-  "file": "/home/mwiner/Projects/SerialD/avr.cpp",
-  "output": "CMakeFiles/denon_avr.dir/avr.cpp.o"
+  "command": "/usr/bin/g++ -DASIO_STANDALONE -I/home/mwiner/Projects/SerialD/include -isystem /home/mwiner/vcpkg/installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/SerialD.dir/src/avr.cpp.o -c /home/mwiner/Projects/SerialD/src/avr.cpp",
+  "file": "/home/mwiner/Projects/SerialD/src/avr.cpp",
+  "output": "CMakeFiles/SerialD.dir/src/avr.cpp.o"
 }
 ]

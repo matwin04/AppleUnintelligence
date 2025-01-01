@@ -29,6 +29,7 @@ void AVR::sendCommand(const std::string& command) {
         write(serialPort, cmd.c_str(), cmd.length());
     } else {
         std::cerr << "Serial port not open." << std::endl;
+        std::cerr << "Try running - sudo ./SerialD -  " << std::endl;
     }
 }
 

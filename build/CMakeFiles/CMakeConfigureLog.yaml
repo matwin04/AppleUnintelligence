@@ -537,3 +537,50 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/mwiner/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "/home/mwiner/vcpkg/installed/x64-linux/share/crow/Findasio.cmake:17 (find_package)"
+      - "/home/mwiner/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/mwiner/vcpkg/installed/x64-linux/share/crow/CrowConfig.cmake:32 (find_dependency)"
+      - "/home/mwiner/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:16 (find_package)"
+    directories:
+      source: "/home/mwiner/Projects/SerialD/build/CMakeFiles/CMakeScratch/TryCompile-rQzZQw"
+      binary: "/home/mwiner/Projects/SerialD/build/CMakeFiles/CMakeScratch/TryCompile-rQzZQw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/mwiner/vcpkg/installed/x64-linux/share/crow"
+      VCPKG_INSTALLED_DIR: "/home/mwiner/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/mwiner/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mwiner/Projects/SerialD/build/CMakeFiles/CMakeScratch/TryCompile-rQzZQw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b24ac/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b24ac.dir/build.make CMakeFiles/cmTC_b24ac.dir/build
+        gmake[1]: Entering directory '/home/mwiner/Projects/SerialD/build/CMakeFiles/CMakeScratch/TryCompile-rQzZQw'
+        Building CXX object CMakeFiles/cmTC_b24ac.dir/src.cxx.o
+        /usr/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_b24ac.dir/src.cxx.o -c /home/mwiner/Projects/SerialD/build/CMakeFiles/CMakeScratch/TryCompile-rQzZQw/src.cxx
+        Linking CXX executable cmTC_b24ac
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b24ac.dir/link.txt --verbose=1
+        /usr/bin/g++ CMakeFiles/cmTC_b24ac.dir/src.cxx.o -o cmTC_b24ac 
+        gmake[1]: Leaving directory '/home/mwiner/Projects/SerialD/build/CMakeFiles/CMakeScratch/TryCompile-rQzZQw'
+        
+      exitCode: 0
+...

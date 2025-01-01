@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/mwiner/Projects/SerialD/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/denon_avr.dir/all
+all: CMakeFiles/SerialD.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/denon_avr.dir/clean
+clean: CMakeFiles/SerialD.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/denon_avr.dir
+# Target rules for target CMakeFiles/SerialD.dir
 
 # All Build rule for target.
-CMakeFiles/denon_avr.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/denon_avr.dir/build.make CMakeFiles/denon_avr.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/denon_avr.dir/build.make CMakeFiles/denon_avr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mwiner/Projects/SerialD/build/CMakeFiles --progress-num=1,2,3 "Built target denon_avr"
-.PHONY : CMakeFiles/denon_avr.dir/all
+CMakeFiles/SerialD.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialD.dir/build.make CMakeFiles/SerialD.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialD.dir/build.make CMakeFiles/SerialD.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mwiner/Projects/SerialD/build/CMakeFiles --progress-num=1,2,3 "Built target SerialD"
+.PHONY : CMakeFiles/SerialD.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/denon_avr.dir/rule: cmake_check_build_system
+CMakeFiles/SerialD.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mwiner/Projects/SerialD/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/denon_avr.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SerialD.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mwiner/Projects/SerialD/build/CMakeFiles 0
-.PHONY : CMakeFiles/denon_avr.dir/rule
+.PHONY : CMakeFiles/SerialD.dir/rule
 
 # Convenience name for target.
-denon_avr: CMakeFiles/denon_avr.dir/rule
-.PHONY : denon_avr
+SerialD: CMakeFiles/SerialD.dir/rule
+.PHONY : SerialD
 
 # clean rule for target.
-CMakeFiles/denon_avr.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/denon_avr.dir/build.make CMakeFiles/denon_avr.dir/clean
-.PHONY : CMakeFiles/denon_avr.dir/clean
+CMakeFiles/SerialD.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialD.dir/build.make CMakeFiles/SerialD.dir/clean
+.PHONY : CMakeFiles/SerialD.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

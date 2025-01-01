@@ -117,65 +117,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named denon_avr
+# Target rules for targets named SerialD
 
 # Build rule for target.
-denon_avr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 denon_avr
-.PHONY : denon_avr
+SerialD: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SerialD
+.PHONY : SerialD
 
 # fast build rule for target.
-denon_avr/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/denon_avr.dir/build.make CMakeFiles/denon_avr.dir/build
-.PHONY : denon_avr/fast
+SerialD/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialD.dir/build.make CMakeFiles/SerialD.dir/build
+.PHONY : SerialD/fast
 
-avr.o: avr.cpp.o
-.PHONY : avr.o
-
-# target to build an object file
-avr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/denon_avr.dir/build.make CMakeFiles/denon_avr.dir/avr.cpp.o
-.PHONY : avr.cpp.o
-
-avr.i: avr.cpp.i
-.PHONY : avr.i
-
-# target to preprocess a source file
-avr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/denon_avr.dir/build.make CMakeFiles/denon_avr.dir/avr.cpp.i
-.PHONY : avr.cpp.i
-
-avr.s: avr.cpp.s
-.PHONY : avr.s
-
-# target to generate assembly for a file
-avr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/denon_avr.dir/build.make CMakeFiles/denon_avr.dir/avr.cpp.s
-.PHONY : avr.cpp.s
-
-main.o: main.cpp.o
-.PHONY : main.o
+src/avr.o: src/avr.cpp.o
+.PHONY : src/avr.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/denon_avr.dir/build.make CMakeFiles/denon_avr.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/avr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialD.dir/build.make CMakeFiles/SerialD.dir/src/avr.cpp.o
+.PHONY : src/avr.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/avr.i: src/avr.cpp.i
+.PHONY : src/avr.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/denon_avr.dir/build.make CMakeFiles/denon_avr.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/avr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialD.dir/build.make CMakeFiles/SerialD.dir/src/avr.cpp.i
+.PHONY : src/avr.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/avr.s: src/avr.cpp.s
+.PHONY : src/avr.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/denon_avr.dir/build.make CMakeFiles/denon_avr.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/avr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialD.dir/build.make CMakeFiles/SerialD.dir/src/avr.cpp.s
+.PHONY : src/avr.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialD.dir/build.make CMakeFiles/SerialD.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialD.dir/build.make CMakeFiles/SerialD.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SerialD.dir/build.make CMakeFiles/SerialD.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -185,13 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... denon_avr"
-	@echo "... avr.o"
-	@echo "... avr.i"
-	@echo "... avr.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... SerialD"
+	@echo "... src/avr.o"
+	@echo "... src/avr.i"
+	@echo "... src/avr.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
