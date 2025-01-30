@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/denon_avr.dir/main.cpp.o CMakeFiles/denon_avr.dir/avr.cpp.o -o denon_avr 

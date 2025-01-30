@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/SerialD.dir/src/main.cpp.o CMakeFiles/SerialD.dir/src/avr.cpp.o -o SerialD 
