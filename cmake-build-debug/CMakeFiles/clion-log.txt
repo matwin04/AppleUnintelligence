@@ -1,0 +1,4 @@
+/home/mwiner/CLion/clion-2020.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/drives/HD2/Projects/GameTestPSP
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug

@@ -1,0 +1,624 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Generic - 1 - mips
+      The host system is: Linux - 6.8.0-52-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/mwiner/pspdev/bin/psp-gcc 
+      Build flags: -I/home/mwiner/pspdev/psp/include;-I/home/mwiner/pspdev/psp/sdk/include;-DPSP
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/mwiner/pspdev/bin/psp-g++ 
+      Build flags: -I/home/mwiner/pspdev/psp/include;-I/home/mwiner/pspdev/psp/sdk/include;-DPSP
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJWE7X"
+      binary: "/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJWE7X"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJWE7X'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e64b1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e64b1.dir/build.make CMakeFiles/cmTC_e64b1.dir/build
+        gmake[1]: Entering directory '/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJWE7X'
+        Building C object CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj
+        /home/mwiner/pspdev/bin/psp-gcc -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -v -o CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/mwiner/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_e64b1.dir/'
+         /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1 -quiet -v -iprefix /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/mwiner/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e64b1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /tmp/ccCOt65c.s
+        GNU C17 (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"
+        ignoring nonexistent directory "/home/mwiner/pspdev/bin/../psp/usr/local/include"
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../psp/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: 9d44d7c078b78bc7e3f91ad7d12507b4
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_e64b1.dir/'
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj /tmp/ccCOt65c.s
+        COMPILER_PATH=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e64b1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e64b1.dir/link.txt --verbose=1
+        /home/mwiner/pspdev/bin/psp-gcc  -v CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj -o cmTC_e64b1   -L/home/mwiner/pspdev/lib  -L/home/mwiner/pspdev/psp/lib  -L/home/mwiner/pspdev/psp/sdk/lib 
+        Using built-in specs.
+        COLLECT_GCC=/home/mwiner/pspdev/bin/psp-gcc
+        COLLECT_LTO_WRAPPER=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COMPILER_PATH=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e64b1' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_e64b1.'
+         /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHTdOSK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/mwiner/pspdev/bin/../psp -EL -o cmTC_e64b1 /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/mwiner/pspdev/lib -L/home/mwiner/pspdev/psp/lib -L/home/mwiner/pspdev/psp/sdk/lib -L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/mwiner/pspdev/bin/../lib/gcc -L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/mwiner/pspdev/bin/../psp/lib CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o
+        /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/ccHTdOSK.res -flinker-output=exec /home/mwiner/pspdev/psp/lib/libpthread.a@0x60c6a /home/mwiner/pspdev/psp/lib/libpthread.a@0x62cfe /home/mwiner/pspdev/psp/lib/libpthread.a@0x64fe6 /home/mwiner/pspdev/psp/lib/libpthread.a@0x66abe /home/mwiner/pspdev/psp/lib/libpthread.a@0x1aae /home/mwiner/pspdev/psp/lib/libpthread.a@0x510a /home/mwiner/pspdev/psp/lib/libpthread.a@0x719e /home/mwiner/pspdev/psp/lib/libpthread.a@0xb6fe /home/mwiner/pspdev/psp/lib/libpthread.a@0x1a42a /home/mwiner/pspdev/psp/lib/libpthread.a@0x1c312 /home/mwiner/pspdev/psp/lib/libpthread.a@0x27166 /home/mwiner/pspdev/psp/lib/libpthread.a@0x549b6 /home/mwiner/pspdev/psp/lib/libpthread.a@0x59466 /home/mwiner/pspdev/psp/lib/libpthread.a@0x5cf56 /home/mwiner/pspdev/psp/lib/libpthread.a@0x5eaaa /home/mwiner/pspdev/psp/lib/libpthread.a@0x68dca /home/mwiner/pspdev/psp/lib/libpthread.a@0x6a2fa /home/mwiner/pspdev/psp/lib/libpthread.a@0x6c87e /home/mwiner/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/ccHTdOSK.res -flinker-output=exec /home/mwiner/pspdev/psp/lib/libpthread.a@0x60c6a /home/mwiner/pspdev/psp/lib/libpthread.a@0x62cfe /home/mwiner/pspdev/psp/lib/libpthread.a@0x64fe6 /home/mwiner/pspdev/psp/lib/libpthread.a@0x66abe /home/mwiner/pspdev/psp/lib/libpthread.a@0x1aae /home/mwiner/pspdev/psp/lib/libpthread.a@0x510a /home/mwiner/pspdev/psp/lib/libpthread.a@0x719e /home/mwiner/pspdev/psp/lib/libpthread.a@0xb6fe /home/mwiner/pspdev/psp/lib/libpthread.a@0x1a42a /home/mwiner/pspdev/psp/lib/libpthread.a@0x1c312 /home/mwiner/pspdev/psp/lib/libpthread.a@0x27166 /home/mwiner/pspdev/psp/lib/libpthread.a@0x549b6 /home/mwiner/pspdev/psp/lib/libpthread.a@0x59466 /home/mwiner/pspdev/psp/lib/libpthread.a@0x5cf56 /home/mwiner/pspdev/psp/lib/libpthread.a@0x5eaaa /home/mwiner/pspdev/psp/lib/libpthread.a@0x68dca /home/mwiner/pspdev/psp/lib/libpthread.a@0x6a2fa /home/mwiner/pspdev/psp/lib/libpthread.a@0x6c87e /home/mwiner/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/mwiner/pspdev/bin/psp-gcc @/tmp/ccWVADVE
+        Using built-in specs.
+        COLLECT_GCC=/home/mwiner/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-v' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccuCAplv.ltrans.out' '-fwpa' '-fresolution=/tmp/ccHTdOSK.res' '-flinker-output=exec'
+         /home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_e64b1.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccuCAplv.ltrans.out -fwpa -fresolution=/tmp/ccHTdOSK.res -flinker-output=exec @/tmp/ccmcC24C
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-v' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccuCAplv.ltrans.out' '-fwpa' '-fresolution=/tmp/ccHTdOSK.res' '-flinker-output=exec' '-dumpdir' './cmTC_e64b1.wpa.'
+        /home/mwiner/pspdev/bin/psp-gcc @/tmp/cc6qLXeM
+        Using built-in specs.
+        COLLECT_GCC=/home/mwiner/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-v' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccuCAplv.ltrans0.ltrans.o'
+         /home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_e64b1.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccvS2m3l -o /tmp/ccD7ITF1.s
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-v' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccuCAplv.ltrans0.ltrans.o'
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccuCAplv.ltrans0.ltrans.o /tmp/ccD7ITF1.s
+        COMPILER_PATH=/home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-v' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccuCAplv.ltrans0.ltrans.o' '-dumpdir' './cmTC_e64b1.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e64b1' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_e64b1.'
+        gmake[1]: Leaving directory '/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJWE7X'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+          add: [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+          add: [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/include]
+        collapse include dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/include-fixed]
+        collapse include dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include] ==> [/home/mwiner/pspdev/psp/include]
+        implicit include dirs: [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/include;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/include-fixed;/home/mwiner/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJWE7X']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e64b1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e64b1.dir/build.make CMakeFiles/cmTC_e64b1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJWE7X']
+        ignore line: [Building C object CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/home/mwiner/pspdev/bin/psp-gcc -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -v -o CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/mwiner/pspdev/bin/psp-gcc]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_e64b1.dir/']
+        ignore line: [ /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1 -quiet -v -iprefix /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/mwiner/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e64b1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /tmp/ccCOt65c.s]
+        ignore line: [GNU C17 (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [warning: GMP header version 6.2.1 differs from library version 6.3.0.]
+        ignore line: [warning: MPFR header version 4.1.0 differs from library version 4.2.1.]
+        ignore line: [warning: MPC header version 1.2.1 differs from library version 1.3.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/mwiner/pspdev/bin/../psp/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../psp/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 9d44d7c078b78bc7e3f91ad7d12507b4]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_e64b1.dir/']
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj /tmp/ccCOt65c.s]
+        ignore line: [COMPILER_PATH=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e64b1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e64b1.dir/link.txt --verbose=1]
+        ignore line: [/home/mwiner/pspdev/bin/psp-gcc  -v CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj -o cmTC_e64b1   -L/home/mwiner/pspdev/lib  -L/home/mwiner/pspdev/psp/lib  -L/home/mwiner/pspdev/psp/sdk/lib ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/mwiner/pspdev/bin/psp-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e64b1' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_e64b1.']
+        link line: [ /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHTdOSK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/mwiner/pspdev/bin/../psp -EL -o cmTC_e64b1 /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/mwiner/pspdev/lib -L/home/mwiner/pspdev/psp/lib -L/home/mwiner/pspdev/psp/sdk/lib -L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/mwiner/pspdev/bin/../lib/gcc -L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/mwiner/pspdev/bin/../psp/lib CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+          arg [/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccHTdOSK.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspkernel] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/mwiner/pspdev/bin/../psp] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e64b1] ==> ignore
+          arg [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o]
+          arg [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o]
+          arg [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o]
+          arg [-L/home/mwiner/pspdev/lib] ==> dir [/home/mwiner/pspdev/lib]
+          arg [-L/home/mwiner/pspdev/psp/lib] ==> dir [/home/mwiner/pspdev/psp/lib]
+          arg [-L/home/mwiner/pspdev/psp/sdk/lib] ==> dir [/home/mwiner/pspdev/psp/sdk/lib]
+          arg [-L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0] ==> dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0]
+          arg [-L/home/mwiner/pspdev/bin/../lib/gcc] ==> dir [/home/mwiner/pspdev/bin/../lib/gcc]
+          arg [-L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib]
+          arg [-L/home/mwiner/pspdev/bin/../psp/lib] ==> dir [/home/mwiner/pspdev/bin/../psp/lib]
+          arg [CMakeFiles/cmTC_e64b1.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lpspkernel] ==> lib [pspkernel]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o]
+          arg [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+        collapse obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> [/home/mwiner/pspdev/psp/lib/crt0.o]
+        collapse obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crti.o]
+        collapse obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtbegin.o]
+        collapse obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtend.o]
+        collapse obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        collapse library dir [/home/mwiner/pspdev/lib] ==> [/home/mwiner/pspdev/lib]
+        collapse library dir [/home/mwiner/pspdev/psp/lib] ==> [/home/mwiner/pspdev/psp/lib]
+        collapse library dir [/home/mwiner/pspdev/psp/sdk/lib] ==> [/home/mwiner/pspdev/psp/sdk/lib]
+        collapse library dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0]
+        collapse library dir [/home/mwiner/pspdev/bin/../lib/gcc] ==> [/home/mwiner/pspdev/lib/gcc]
+        collapse library dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> [/home/mwiner/pspdev/psp/lib]
+        collapse library dir [/home/mwiner/pspdev/bin/../psp/lib] ==> [/home/mwiner/pspdev/psp/lib]
+        implicit libs: [gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc]
+        implicit objs: [/home/mwiner/pspdev/psp/lib/crt0.o;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crti.o;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtbegin.o;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtend.o;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        implicit dirs: [/home/mwiner/pspdev/lib;/home/mwiner/pspdev/psp/lib;/home/mwiner/pspdev/psp/sdk/lib;/home/mwiner/pspdev/lib/gcc/psp/14.1.0;/home/mwiner/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4pAB3A"
+      binary: "/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4pAB3A"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4pAB3A'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_643f0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_643f0.dir/build.make CMakeFiles/cmTC_643f0.dir/build
+        gmake[1]: Entering directory '/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4pAB3A'
+        Building CXX object CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj
+        /home/mwiner/pspdev/bin/psp-g++ -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -v -o CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/mwiner/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_643f0.dir/'
+         /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1plus -quiet -v -iprefix /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/mwiner/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_643f0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /tmp/ccramaAu.s
+        GNU C++17 (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0"
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp"
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward"
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"
+        ignoring nonexistent directory "/home/mwiner/pspdev/bin/../psp/usr/local/include"
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"
+        ignoring duplicate directory "/home/mwiner/pspdev/bin/../psp/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: 17dfb5294db24b81ebd904e970fe4d52
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_643f0.dir/'
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccramaAu.s
+        COMPILER_PATH=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_643f0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_643f0.dir/link.txt --verbose=1
+        /home/mwiner/pspdev/bin/psp-g++  -v CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_643f0   -L/home/mwiner/pspdev/lib  -L/home/mwiner/pspdev/psp/lib  -L/home/mwiner/pspdev/psp/sdk/lib 
+        Using built-in specs.
+        COLLECT_GCC=/home/mwiner/pspdev/bin/psp-g++
+        COLLECT_LTO_WRAPPER=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COMPILER_PATH=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_643f0' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_643f0.'
+         /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1ivehx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/mwiner/pspdev/bin/../psp -EL -o cmTC_643f0 /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/mwiner/pspdev/lib -L/home/mwiner/pspdev/psp/lib -L/home/mwiner/pspdev/psp/sdk/lib -L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/mwiner/pspdev/bin/../lib/gcc -L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/mwiner/pspdev/bin/../psp/lib CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o
+        /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/cc1ivehx.res -flinker-output=exec /home/mwiner/pspdev/psp/lib/libpthread.a@0x60c6a /home/mwiner/pspdev/psp/lib/libpthread.a@0x62cfe /home/mwiner/pspdev/psp/lib/libpthread.a@0x64fe6 /home/mwiner/pspdev/psp/lib/libpthread.a@0x66abe /home/mwiner/pspdev/psp/lib/libpthread.a@0x1aae /home/mwiner/pspdev/psp/lib/libpthread.a@0x510a /home/mwiner/pspdev/psp/lib/libpthread.a@0x719e /home/mwiner/pspdev/psp/lib/libpthread.a@0xb6fe /home/mwiner/pspdev/psp/lib/libpthread.a@0x1a42a /home/mwiner/pspdev/psp/lib/libpthread.a@0x1c312 /home/mwiner/pspdev/psp/lib/libpthread.a@0x27166 /home/mwiner/pspdev/psp/lib/libpthread.a@0x549b6 /home/mwiner/pspdev/psp/lib/libpthread.a@0x59466 /home/mwiner/pspdev/psp/lib/libpthread.a@0x5cf56 /home/mwiner/pspdev/psp/lib/libpthread.a@0x5eaaa /home/mwiner/pspdev/psp/lib/libpthread.a@0x68dca /home/mwiner/pspdev/psp/lib/libpthread.a@0x6a2fa /home/mwiner/pspdev/psp/lib/libpthread.a@0x6c87e /home/mwiner/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/cc1ivehx.res -flinker-output=exec /home/mwiner/pspdev/psp/lib/libpthread.a@0x60c6a /home/mwiner/pspdev/psp/lib/libpthread.a@0x62cfe /home/mwiner/pspdev/psp/lib/libpthread.a@0x64fe6 /home/mwiner/pspdev/psp/lib/libpthread.a@0x66abe /home/mwiner/pspdev/psp/lib/libpthread.a@0x1aae /home/mwiner/pspdev/psp/lib/libpthread.a@0x510a /home/mwiner/pspdev/psp/lib/libpthread.a@0x719e /home/mwiner/pspdev/psp/lib/libpthread.a@0xb6fe /home/mwiner/pspdev/psp/lib/libpthread.a@0x1a42a /home/mwiner/pspdev/psp/lib/libpthread.a@0x1c312 /home/mwiner/pspdev/psp/lib/libpthread.a@0x27166 /home/mwiner/pspdev/psp/lib/libpthread.a@0x549b6 /home/mwiner/pspdev/psp/lib/libpthread.a@0x59466 /home/mwiner/pspdev/psp/lib/libpthread.a@0x5cf56 /home/mwiner/pspdev/psp/lib/libpthread.a@0x5eaaa /home/mwiner/pspdev/psp/lib/libpthread.a@0x68dca /home/mwiner/pspdev/psp/lib/libpthread.a@0x6a2fa /home/mwiner/pspdev/psp/lib/libpthread.a@0x6c87e /home/mwiner/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/mwiner/pspdev/bin/psp-g++ @/tmp/ccm3qsBt
+        Using built-in specs.
+        COLLECT_GCC=/home/mwiner/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-v' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/cckyO4i7.ltrans.out' '-fwpa' '-fresolution=/tmp/cc1ivehx.res' '-flinker-output=exec'
+         /home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_643f0.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/cckyO4i7.ltrans.out -fwpa -fresolution=/tmp/cc1ivehx.res -flinker-output=exec @/tmp/ccAATnWp
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-v' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/cckyO4i7.ltrans.out' '-fwpa' '-fresolution=/tmp/cc1ivehx.res' '-flinker-output=exec' '-dumpdir' './cmTC_643f0.wpa.'
+        /home/mwiner/pspdev/bin/psp-g++ @/tmp/ccKRAhH0
+        Using built-in specs.
+        COLLECT_GCC=/home/mwiner/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-v' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/cckyO4i7.ltrans0.ltrans.o'
+         /home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_643f0.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccesAyPe -o /tmp/ccSJ92ua.s
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-v' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/cckyO4i7.ltrans0.ltrans.o'
+         /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/cckyO4i7.ltrans0.ltrans.o /tmp/ccSJ92ua.s
+        COMPILER_PATH=/home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-v' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/cckyO4i7.ltrans0.ltrans.o' '-dumpdir' './cmTC_643f0.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_643f0' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_643f0.'
+        gmake[1]: Leaving directory '/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4pAB3A'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0]
+          add: [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp]
+          add: [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward]
+          add: [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+          add: [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+          add: [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0] ==> [/home/mwiner/pspdev/psp/include/c++/14.1.0]
+        collapse include dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp] ==> [/home/mwiner/pspdev/psp/include/c++/14.1.0/psp]
+        collapse include dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward] ==> [/home/mwiner/pspdev/psp/include/c++/14.1.0/backward]
+        collapse include dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/include]
+        collapse include dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/include-fixed]
+        collapse include dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include] ==> [/home/mwiner/pspdev/psp/include]
+        implicit include dirs: [/home/mwiner/pspdev/psp/include/c++/14.1.0;/home/mwiner/pspdev/psp/include/c++/14.1.0/psp;/home/mwiner/pspdev/psp/include/c++/14.1.0/backward;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/include;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/include-fixed;/home/mwiner/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4pAB3A']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_643f0/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_643f0.dir/build.make CMakeFiles/cmTC_643f0.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4pAB3A']
+        ignore line: [Building CXX object CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/home/mwiner/pspdev/bin/psp-g++ -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -v -o CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/mwiner/pspdev/bin/psp-g++]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_643f0.dir/']
+        ignore line: [ /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1plus -quiet -v -iprefix /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/mwiner/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_643f0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /tmp/ccramaAu.s]
+        ignore line: [GNU C++17 (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [warning: GMP header version 6.2.1 differs from library version 6.3.0.]
+        ignore line: [warning: MPFR header version 4.1.0 differs from library version 4.2.1.]
+        ignore line: [warning: MPC header version 1.2.1 differs from library version 1.3.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0"]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp"]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/mwiner/pspdev/bin/../psp/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/mwiner/pspdev/bin/../psp/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0]
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp]
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward]
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 17dfb5294db24b81ebd904e970fe4d52]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_643f0.dir/']
+        ignore line: [ /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccramaAu.s]
+        ignore line: [COMPILER_PATH=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-v' '-o' 'CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_643f0]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_643f0.dir/link.txt --verbose=1]
+        ignore line: [/home/mwiner/pspdev/bin/psp-g++  -v CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_643f0   -L/home/mwiner/pspdev/lib  -L/home/mwiner/pspdev/psp/lib  -L/home/mwiner/pspdev/psp/sdk/lib ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/mwiner/pspdev/bin/psp-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --disable-nls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../libexec/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/mwiner/pspdev/bin/../lib/gcc/:/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/mwiner/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_643f0' '-L/home/mwiner/pspdev/lib' '-L/home/mwiner/pspdev/psp/lib' '-L/home/mwiner/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_643f0.']
+        link line: [ /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1ivehx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/mwiner/pspdev/bin/../psp -EL -o cmTC_643f0 /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/mwiner/pspdev/lib -L/home/mwiner/pspdev/psp/lib -L/home/mwiner/pspdev/psp/sdk/lib -L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/mwiner/pspdev/bin/../lib/gcc -L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/mwiner/pspdev/bin/../psp/lib CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+          arg [/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/mwiner/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc1ivehx.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspkernel] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/mwiner/pspdev/bin/../psp] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_643f0] ==> ignore
+          arg [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o]
+          arg [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o]
+          arg [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o]
+          arg [-L/home/mwiner/pspdev/lib] ==> dir [/home/mwiner/pspdev/lib]
+          arg [-L/home/mwiner/pspdev/psp/lib] ==> dir [/home/mwiner/pspdev/psp/lib]
+          arg [-L/home/mwiner/pspdev/psp/sdk/lib] ==> dir [/home/mwiner/pspdev/psp/sdk/lib]
+          arg [-L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0] ==> dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0]
+          arg [-L/home/mwiner/pspdev/bin/../lib/gcc] ==> dir [/home/mwiner/pspdev/bin/../lib/gcc]
+          arg [-L/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib]
+          arg [-L/home/mwiner/pspdev/bin/../psp/lib] ==> dir [/home/mwiner/pspdev/bin/../psp/lib]
+          arg [CMakeFiles/cmTC_643f0.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lpspkernel] ==> lib [pspkernel]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o]
+          arg [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+        collapse obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> [/home/mwiner/pspdev/psp/lib/crt0.o]
+        collapse obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crti.o]
+        collapse obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtbegin.o]
+        collapse obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtend.o]
+        collapse obj [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        collapse library dir [/home/mwiner/pspdev/lib] ==> [/home/mwiner/pspdev/lib]
+        collapse library dir [/home/mwiner/pspdev/psp/lib] ==> [/home/mwiner/pspdev/psp/lib]
+        collapse library dir [/home/mwiner/pspdev/psp/sdk/lib] ==> [/home/mwiner/pspdev/psp/sdk/lib]
+        collapse library dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0] ==> [/home/mwiner/pspdev/lib/gcc/psp/14.1.0]
+        collapse library dir [/home/mwiner/pspdev/bin/../lib/gcc] ==> [/home/mwiner/pspdev/lib/gcc]
+        collapse library dir [/home/mwiner/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> [/home/mwiner/pspdev/psp/lib]
+        collapse library dir [/home/mwiner/pspdev/bin/../psp/lib] ==> [/home/mwiner/pspdev/psp/lib]
+        implicit libs: [stdc++;m;gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc]
+        implicit objs: [/home/mwiner/pspdev/psp/lib/crt0.o;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crti.o;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtbegin.o;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtend.o;/home/mwiner/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        implicit dirs: [/home/mwiner/pspdev/lib;/home/mwiner/pspdev/psp/lib;/home/mwiner/pspdev/psp/sdk/lib;/home/mwiner/pspdev/lib/gcc/psp/14.1.0;/home/mwiner/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+...
