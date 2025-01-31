@@ -236,7 +236,19 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
 //Path to a library.
+pkgcfg_lib_SDL2_IMAGE_SDL2:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2.so
+
+//Path to a library.
+pkgcfg_lib_SDL2_IMAGE_SDL2_image:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2_image.so
+
+//Path to a library.
 pkgcfg_lib_SDL2_SDL2:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2.so
+
+//Path to a library.
+pkgcfg_lib_SDL2_TTF_SDL2:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2.so
+
+//Path to a library.
+pkgcfg_lib_SDL2_TTF_SDL2_ttf:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
 
 
 ########################
@@ -406,6 +418,41 @@ SDL2_CFLAGS:INTERNAL=-I/usr/include/SDL2;-D_REENTRANT
 SDL2_CFLAGS_I:INTERNAL=
 SDL2_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
 SDL2_FOUND:INTERNAL=1
+SDL2_IMAGE_CFLAGS:INTERNAL=-I/usr/include/SDL2;-D_REENTRANT;-I/usr/include/libpng16;-I/usr/include/x86_64-linux-gnu;-I/usr/include/webp
+SDL2_IMAGE_CFLAGS_I:INTERNAL=
+SDL2_IMAGE_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
+SDL2_IMAGE_FOUND:INTERNAL=1
+SDL2_IMAGE_INCLUDEDIR:INTERNAL=/usr/include
+SDL2_IMAGE_INCLUDE_DIRS:INTERNAL=/usr/include/SDL2;/usr/include/libpng16;/usr/include/x86_64-linux-gnu;/usr/include/webp
+SDL2_IMAGE_LDFLAGS:INTERNAL=-lSDL2_image;-lSDL2
+SDL2_IMAGE_LDFLAGS_OTHER:INTERNAL=
+SDL2_IMAGE_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+SDL2_IMAGE_LIBRARIES:INTERNAL=SDL2_image;SDL2
+SDL2_IMAGE_LIBRARY_DIRS:INTERNAL=
+SDL2_IMAGE_LIBS:INTERNAL=
+SDL2_IMAGE_LIBS_L:INTERNAL=
+SDL2_IMAGE_LIBS_OTHER:INTERNAL=
+SDL2_IMAGE_LIBS_PATHS:INTERNAL=
+SDL2_IMAGE_MODULE_NAME:INTERNAL=SDL2_image
+SDL2_IMAGE_PREFIX:INTERNAL=/usr
+SDL2_IMAGE_SDL2_image_INCLUDEDIR:INTERNAL=
+SDL2_IMAGE_SDL2_image_LIBDIR:INTERNAL=
+SDL2_IMAGE_SDL2_image_PREFIX:INTERNAL=
+SDL2_IMAGE_SDL2_image_VERSION:INTERNAL=
+SDL2_IMAGE_STATIC_CFLAGS:INTERNAL=-I/usr/include/SDL2;-D_REENTRANT;-I/usr/include/libpng16;-I/usr/include/x86_64-linux-gnu;-I/usr/include/webp;-DLZMA_API_STATIC
+SDL2_IMAGE_STATIC_CFLAGS_I:INTERNAL=
+SDL2_IMAGE_STATIC_CFLAGS_OTHER:INTERNAL=-D_REENTRANT;-DLZMA_API_STATIC
+SDL2_IMAGE_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/SDL2;/usr/include/libpng16;/usr/include/x86_64-linux-gnu;/usr/include/webp
+SDL2_IMAGE_STATIC_LDFLAGS:INTERNAL=-lSDL2_image;-lSDL2;-lm;-lasound;-lm;-ldl;-lpthread;-lpulse;-pthread;-lsamplerate;-lX11;-lXext;-lXcursor;-lXi;-lXfixes;-lXrandr;-lXss;-ldrm;-lgbm;-lwayland-egl;-lwayland-client;-lwayland-cursor;-lxkbcommon;-ldecor-0;-lpthread;-lpng16;-lm;-lz;-lm;-lz;-ljpeg;-ltiff;-lwebp;-lLerc;-ljbig;-lm;-lwebp;-lm;-lsharpyuv;-lm;-lzstd;-pthread;-llzma;-pthread;-lpthread;-ljpeg;-ldeflate;-lz;-lwebpdemux;-lm;-lsharpyuv;-lm;-lwebp;-lm;-lsharpyuv;-lm
+SDL2_IMAGE_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread;-pthread
+SDL2_IMAGE_STATIC_LIBDIR:INTERNAL=
+SDL2_IMAGE_STATIC_LIBRARIES:INTERNAL=SDL2_image;SDL2;m;asound;m;dl;pthread;pulse;samplerate;X11;Xext;Xcursor;Xi;Xfixes;Xrandr;Xss;drm;gbm;wayland-egl;wayland-client;wayland-cursor;xkbcommon;decor-0;pthread;png16;m;z;m;z;jpeg;tiff;webp;Lerc;jbig;m;webp;m;sharpyuv;m;zstd;lzma;pthread;jpeg;deflate;z;webpdemux;m;sharpyuv;m;webp;m;sharpyuv;m
+SDL2_IMAGE_STATIC_LIBRARY_DIRS:INTERNAL=
+SDL2_IMAGE_STATIC_LIBS:INTERNAL=
+SDL2_IMAGE_STATIC_LIBS_L:INTERNAL=
+SDL2_IMAGE_STATIC_LIBS_OTHER:INTERNAL=
+SDL2_IMAGE_STATIC_LIBS_PATHS:INTERNAL=
+SDL2_IMAGE_VERSION:INTERNAL=2.8.2
 SDL2_INCLUDEDIR:INTERNAL=/usr/include
 SDL2_INCLUDE_DIRS:INTERNAL=/usr/include/SDL2
 SDL2_LDFLAGS:INTERNAL=-lSDL2
@@ -432,13 +479,61 @@ SDL2_STATIC_LIBS:INTERNAL=
 SDL2_STATIC_LIBS_L:INTERNAL=
 SDL2_STATIC_LIBS_OTHER:INTERNAL=
 SDL2_STATIC_LIBS_PATHS:INTERNAL=
+SDL2_TTF_CFLAGS:INTERNAL=-I/usr/include/SDL2;-D_REENTRANT;-I/usr/include/harfbuzz;-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+SDL2_TTF_CFLAGS_I:INTERNAL=
+SDL2_TTF_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
+SDL2_TTF_FOUND:INTERNAL=1
+SDL2_TTF_INCLUDEDIR:INTERNAL=/usr/include
+SDL2_TTF_INCLUDE_DIRS:INTERNAL=/usr/include/SDL2;/usr/include/harfbuzz;/usr/include/freetype2;/usr/include/libpng16;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+SDL2_TTF_LDFLAGS:INTERNAL=-lSDL2_ttf;-lSDL2
+SDL2_TTF_LDFLAGS_OTHER:INTERNAL=
+SDL2_TTF_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+SDL2_TTF_LIBRARIES:INTERNAL=SDL2_ttf;SDL2
+SDL2_TTF_LIBRARY_DIRS:INTERNAL=
+SDL2_TTF_LIBS:INTERNAL=
+SDL2_TTF_LIBS_L:INTERNAL=
+SDL2_TTF_LIBS_OTHER:INTERNAL=
+SDL2_TTF_LIBS_PATHS:INTERNAL=
+SDL2_TTF_MODULE_NAME:INTERNAL=SDL2_ttf
+SDL2_TTF_PREFIX:INTERNAL=/usr
+SDL2_TTF_SDL2_ttf_INCLUDEDIR:INTERNAL=
+SDL2_TTF_SDL2_ttf_LIBDIR:INTERNAL=
+SDL2_TTF_SDL2_ttf_PREFIX:INTERNAL=
+SDL2_TTF_SDL2_ttf_VERSION:INTERNAL=
+SDL2_TTF_STATIC_CFLAGS:INTERNAL=-I/usr/include/SDL2;-D_REENTRANT;-I/usr/include/harfbuzz;-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+SDL2_TTF_STATIC_CFLAGS_I:INTERNAL=
+SDL2_TTF_STATIC_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
+SDL2_TTF_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/SDL2;/usr/include/harfbuzz;/usr/include/freetype2;/usr/include/libpng16;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+SDL2_TTF_STATIC_LDFLAGS:INTERNAL=-lSDL2_ttf;-lSDL2;-lm;-lasound;-lm;-ldl;-lpthread;-lpulse;-pthread;-lsamplerate;-lX11;-lXext;-lXcursor;-lXi;-lXfixes;-lXrandr;-lXss;-ldrm;-lgbm;-lwayland-egl;-lwayland-client;-lwayland-cursor;-lxkbcommon;-ldecor-0;-lpthread;-lharfbuzz;-pthread;-lm;-lbz2;-lz;-lm;-lz;-lm;-lz;-lbrotlicommon;-lglib-2.0;-lm;-pthread;-lpcre2-8;-lgraphite2;-lfreetype;-lbz2;-lz;-lpng16;-lm;-lz;-lm;-lz;-lbrotlidec;-lbrotlicommon
+SDL2_TTF_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread;-pthread
+SDL2_TTF_STATIC_LIBDIR:INTERNAL=
+SDL2_TTF_STATIC_LIBRARIES:INTERNAL=SDL2_ttf;SDL2;m;asound;m;dl;pthread;pulse;samplerate;X11;Xext;Xcursor;Xi;Xfixes;Xrandr;Xss;drm;gbm;wayland-egl;wayland-client;wayland-cursor;xkbcommon;decor-0;pthread;harfbuzz;m;bz2;z;m;z;m;z;brotlicommon;glib-2.0;m;pcre2-8;graphite2;freetype;bz2;z;png16;m;z;m;z;brotlidec;brotlicommon
+SDL2_TTF_STATIC_LIBRARY_DIRS:INTERNAL=
+SDL2_TTF_STATIC_LIBS:INTERNAL=
+SDL2_TTF_STATIC_LIBS_L:INTERNAL=
+SDL2_TTF_STATIC_LIBS_OTHER:INTERNAL=
+SDL2_TTF_STATIC_LIBS_PATHS:INTERNAL=
+SDL2_TTF_VERSION:INTERNAL=2.22.0
 SDL2_VERSION:INTERNAL=2.30.0
 SDL2_sdl2_INCLUDEDIR:INTERNAL=
 SDL2_sdl2_LIBDIR:INTERNAL=
 SDL2_sdl2_PREFIX:INTERNAL=
 SDL2_sdl2_VERSION:INTERNAL=
+__pkg_config_arguments_SDL2:INTERNAL=REQUIRED;sdl2
+__pkg_config_arguments_SDL2_IMAGE:INTERNAL=REQUIRED;SDL2_image
+__pkg_config_arguments_SDL2_TTF:INTERNAL=REQUIRED;SDL2_ttf
 __pkg_config_checked_SDL2:INTERNAL=1
+__pkg_config_checked_SDL2_IMAGE:INTERNAL=1
+__pkg_config_checked_SDL2_TTF:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_IMAGE_SDL2
+pkgcfg_lib_SDL2_IMAGE_SDL2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_IMAGE_SDL2_image
+pkgcfg_lib_SDL2_IMAGE_SDL2_image-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_SDL2_SDL2
 pkgcfg_lib_SDL2_SDL2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_TTF_SDL2
+pkgcfg_lib_SDL2_TTF_SDL2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_TTF_SDL2_ttf
+pkgcfg_lib_SDL2_TTF_SDL2_ttf-ADVANCED:INTERNAL=1
 prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

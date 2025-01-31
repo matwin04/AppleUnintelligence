@@ -1,20 +1,11 @@
 /home/mwiner/CLion/clion-2020.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/drives/HD2/Projects/BrainrotGameTest
--- The C compiler identification is GNU 13.3.0
--- The CXX compiler identification is GNU 13.3.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
--- Checking for one of the modules 'sdl2'
+-- Checking for module 'sdl2'
+--   Found sdl2, version 2.30.0
+-- Checking for module 'SDL2_image'
+--   Found SDL2_image, version 2.8.2
+-- Checking for module 'SDL2_ttf'
+--   Found SDL2_ttf, version 2.22.0
+Cunt
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug
