@@ -1,3 +1,0 @@
-/mnt/drives/HD2/Projects/GameTestPSP/build/CMakeFiles/GameTestPSP.dir
-/mnt/drives/HD2/Projects/GameTestPSP/build/CMakeFiles/edit_cache.dir
-/mnt/drives/HD2/Projects/GameTestPSP/build/CMakeFiles/rebuild_cache.dir

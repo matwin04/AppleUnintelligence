@@ -6,3 +6,7 @@
 
 #IncludeRegexTransform: 
 
+/mnt/drives/HD2/Projects/BrainrotGameTest/main.cpp
+SDL2/SDL.h
+-
+

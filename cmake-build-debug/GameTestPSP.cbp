@@ -5,107 +5,90 @@
 		<Option title="GameTestPSP"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\home\;CMake Files\..\..\..\..\..\home\mwiner\;CMake Files\..\..\..\..\..\home\mwiner\pspdev\;CMake Files\..\..\..\..\..\home\mwiner\pspdev\psp\;CMake Files\..\..\..\..\..\home\mwiner\pspdev\psp\share\;"/>
+		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug"/>
+				<Option working_dir="/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="GameTestPSP">
-				<Option output="/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/GameTestPSP" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-D__PSP__"/>
-					<Add option="-DPSP"/>
-					<Add option="-D_PSP_FW_VERSION=600"/>
-					<Add directory="/home/mwiner/pspdev/psp/sdk/include"/>
-					<Add directory="/usr/include/SDL2"/>
-					<Add directory="/usr/include/c++/13"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
-					<Add directory="/usr/include/c++/13/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 GameTestPSP"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="GameTestPSP/fast">
-				<Option output="/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/GameTestPSP" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-D__PSP__"/>
-					<Add option="-DPSP"/>
-					<Add option="-D_PSP_FW_VERSION=600"/>
-					<Add directory="/home/mwiner/pspdev/psp/sdk/include"/>
-					<Add directory="/usr/include/SDL2"/>
-					<Add directory="/usr/include/c++/13"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
-					<Add directory="/usr/include/c++/13/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 GameTestPSP/fast"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug"/>
+				<Option working_dir="/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/GameTestPSP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GameTestPSP">
+				<Option output="/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/GameTestPSP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 GameTestPSP"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GameTestPSP/fast">
+				<Option output="/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/GameTestPSP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 GameTestPSP/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/drives/HD2/Projects/GameTestPSP/main.cpp">
+		<Unit filename="/mnt/drives/HD2/Projects/BrainrotGameTest/main.cpp">
 			<Option target="GameTestPSP"/>
 		</Unit>
-		<Unit filename="/mnt/drives/HD2/Projects/GameTestPSP/CMakeLists.txt">
+		<Unit filename="/mnt/drives/HD2/Projects/BrainrotGameTest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/mnt/drives/HD2/Projects/GameTestPSP/../../../../../home/mwiner/pspdev/psp/share/AddPrxModule.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\home\mwiner\pspdev\psp\share\"/>
-		</Unit>
-		<Unit filename="/mnt/drives/HD2/Projects/GameTestPSP/../../../../../home/mwiner/pspdev/psp/share/CreatePBP.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\home\mwiner\pspdev\psp\share\"/>
-		</Unit>
-		<Unit filename="/mnt/drives/HD2/Projects/GameTestPSP/../../../../../home/mwiner/pspdev/psp/share/pspdev.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\home\mwiner\pspdev\psp\share\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

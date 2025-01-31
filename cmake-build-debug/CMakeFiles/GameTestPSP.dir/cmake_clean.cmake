@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GameTestPSP.dir/main.cpp.obj"
-  "CMakeFiles/GameTestPSP.dir/main.cpp.obj.d"
+  "CMakeFiles/GameTestPSP.dir/main.cpp.o"
   "GameTestPSP"
   "GameTestPSP.pdb"
 )

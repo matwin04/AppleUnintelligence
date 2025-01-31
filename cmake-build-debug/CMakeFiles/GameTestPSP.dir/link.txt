@@ -1,1 +1,1 @@
-/home/mwiner/pspdev/bin/psp-g++ -g CMakeFiles/GameTestPSP.dir/main.cpp.obj -o GameTestPSP  -lSDL2 
+/usr/bin/c++  -g   CMakeFiles/GameTestPSP.dir/main.cpp.o  -o GameTestPSP  -lSDL2 

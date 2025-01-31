@@ -1,10 +1,6 @@
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-
 int main(int argc,char *argv[]) {
     SDL_Init(SDL_INIT_VIDEO|SDL_INIT_GAMECONTROLLER);
-    IMG_Init(IMG_INIT_PNG);
-
     SDL_Window  * window = SDL_CreateWindow(
             "window",
             SDL_WINDOWPOS_UNDEFINED,
@@ -14,17 +10,7 @@ int main(int argc,char *argv[]) {
             0
     );
     SDL_Renderer * renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED);
-    SDL_Surface * pixels = IMG_Load("osaka.png");
-    SDL_Texture * sprite = SDL_CreateTextureFromSurface(renderer,pixels);
-    SDL_FreeSurface(pixels);
-
-    //Store Dimentions of the texture
-    SDL_Rect sprite_rect;
-    SDL_QueryTexture(sprite,NULL,NULL,&sprite_rect.w,&sprite_rect.h);
-
-    sprite_rect.x = 480/2 - sprite_rect.w/2;
-    sprite_rect.y = 272/2 - sprite_rect.h/2;
-
+    SDL_Rect square = {216,96,34,64};
     int running = 1;
     SDL_Event event;
     while (running) {
@@ -44,7 +30,8 @@ int main(int argc,char *argv[]) {
             }
         }
         SDL_RenderClear(renderer);
-        SDL_RenderCopy(renderer,sprite,NULL,&sprite_rect);
+        SDL_SetRenderDrawColor(renderer,255,0,0,255);
+        SDL_RenderFillRect(renderer,&square);
 
         SDL_SetRenderDrawColor(renderer,255,255,255,255);
         SDL_RenderPresent(renderer);
