@@ -1,3 +1,0 @@
-/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/drives/HD2/Projects/BrainrotGameTest/cmake-build-debug/CMakeFiles/GameTestPSP.dir
